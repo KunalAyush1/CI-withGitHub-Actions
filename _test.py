@@ -9,6 +9,10 @@ def square(n):
 def cube(n):
     return n ** 3
 
+def fifth(n):
+    return n ** 5
+
+
 #testing the square function
 def test_sqaure():
     assert square(2) == 4, "Test Failed : Sqaure of 2 should be 4"
@@ -18,6 +22,11 @@ def test_sqaure():
 def test_cube():
     assert cube(2) == 8, "Test Failed : Sqaure of 2 should be 8"
     assert cube(3) == 27, "Test Failed : Sqaure of 2 should be 27"
+
+
+def test_fifth():
+    assert fifth(2) == 32, "Test Failed : Sqaure of 2 should be 32"
+    assert fifth(3) == 243, "Test Failed : Sqaure of 2 should be 243"
     
     
 #test for invalid input
